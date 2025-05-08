@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-manrope: "Manrope";
+  --color-dark: #0d2d42;
+  --color-gray: #626d77;
+  --color-light-gray: #f8f9f9;
+  --color-accent: #0190c3;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-manrope text-dark text-base/[100%] tracking-[-2%];
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
