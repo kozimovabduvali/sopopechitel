@@ -14,6 +14,16 @@ function AiSupport() {
         <div className='mt-20 md:mt-18 lg:mt-25'>
           <GroupsForum />
         </div>
+
+        {/* Assigning an AI assistant */}
+        <div className='mt-20 md:mt-18 lg:mt-25'>
+          <h4 className='font-extrabold md:text-xl uppercase'>
+            Назначение ИИ ассистента
+          </h4>
+          <h3 className='font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%] mt-6 md:mt-8 lg:mt-10'>
+            Используем искусственный интеллект в процессе формирования и сопровождения встреч наставников и детей. Главная цель — повысить качество взаимодействия, ускорить диагностику и персонализировать подход как к каждому участнику, так и всей группы как системы
+          </h3>
+        </div>
       </main>
     </>
   )

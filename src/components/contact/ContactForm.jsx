@@ -130,7 +130,7 @@ export default function ContactForm() {
               </label>
             </div>
 
-            <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5">
+            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5">
               <span className="font-medium">Оставить заявку</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
