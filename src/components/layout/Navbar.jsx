@@ -61,7 +61,7 @@ function Navbar() {
             <Link
               key={i}
               to={item.to}
-              className={`${pathname === item.to && "text-accent"}`}
+              className={`transition duration-200 hover:text-dark/75 ${pathname === item.to && "text-accent"}`}
             >
               {item.label}
             </Link>

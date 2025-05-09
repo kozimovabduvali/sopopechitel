@@ -56,19 +56,19 @@ function HowWeHelp() {
       {/* Radius */}
       <div className='flex flex-col md:flex-row -space-x-5 -space-y-7 md:space-y-0 items-center justify-center text-center mt-10 md:mt-15 lg:mt-18'>
         {/* 1 */}
-        <div className='border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
+        <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
           <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem]'>
             Форум группа «Наставник-ребёнок»
           </h4>
         </div>
         {/* 2 */}
-        <div className='border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
+        <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
           <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem]'>
           Форум группа «Наставник-ребёнок-психолог»
           </h4>
         </div>
         {/* 3 */}
-        <div className='border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
+        <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
           <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem]'>
           Форум группа «Наставник-психолог»
           </h4>

@@ -3,21 +3,21 @@ import React from "react";
 function About() {
   return (
     <div className="max-w-330 mx-auto px-4 pt-20 lg:pt-15">
-      <div className="flex flex-col text-center justify-center gap-4">
+      <div className="flex flex-col text-center justify-center">
         <p className="py-1 w-fit self-center px-2 rounded-md border border-accent flex items-center gap-1 text-accent">
           <img src="/year.png" width={22} height={22} alt="" />О ФОНДЕ
         </p>
 
-        <h1 className="font-semibold text-dark md:text-[80px] sm:text-[60px] text-[32px] text-center leading-none">
+        <h1 className="font-semibold text-dark md:text-[80px] sm:text-6xl text-[32px] text-center leading-none mt-6">
           Наставничество. Поддержка. Успешное будущее
         </h1>
 
-        <p className="font-medium text-gray sm:text-[20px] text-sm my-10 text-center max-w-[936px] mx-auto w-full leading-none">
+        <p className="font-medium text-gray sm:text-[20px] text-sm text-center max-w-[936px] mx-auto w-full leading-none mt-10 md:mt-15 lg:mt-18">
           «Сопопечители» — это программа наставничества, которая помогает детям
           в трудной жизненной ситуации найти поддержку взрослого, развиваться и
           учиться строить своё будущее
         </p>
-        <div className="w-full relative sm:min-h-[399px] h-[220px]">
+        <div className="w-full relative sm:min-h-[399px] h-55 lg:h-100 mt-18  md:mt-20">
           <img
             src="/about.png"
             className="object-cover w-full h-full absolute z-0 inset-0 rounded-lg"
@@ -34,17 +34,17 @@ function About() {
       </div>
 
       {/* uchast */}
-      <div className="mt-20 space-y-10">
-        <p className="uppercase font-extrabold md:text-[20px] text-[16px] text-dark">
+      <div className="mt-18 md:mt-20 lg:mt-25">
+        <h4 className="uppercase font-extrabold md:text-[20px] text-[16px] text-dark">
           Участники проекта
-        </p>
-        <p className="max-w-[957px] md:text-[40px] sm:text-[32px] text-[20px] leading-none font-semibold w-full text-dark">
+        </h4>
+        <h2 className="max-w-[957px] md:text-[40px] sm:text-[32px] text-[20px] leading-none font-semibold w-full text-dark mt-6 md:mt-8 lg:mt-10">
           Сотрудничаем с детскими домами, семейными центрами и другими
           благотворительными проектами, чтобы поддержать детей, оставшихся без
           опоры семьи
-        </p>
+        </h2>
 
-        <div className="grid gap-3 md:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+        <div className="grid gap-3 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-10 md:mt-15 lg:mt-18">
           <div className="bg-light-gray rounded-lg py-[24px] px-[16px] flex flex-col justify-between gap-5 max-sm:gap-7 ">
             <h1 className="text-dark text-[32px] font-normal">Куратор</h1>
             <img src="/slinder.png" className="self-end" alt="" />
@@ -76,7 +76,7 @@ function About() {
       </div>
 
       {/* Миссия и ценности */}
-      <div className="mt-20 space-y-10">
+      <div className="mt-20 md:mt-25 space-y-10">
         <div className="md:flex flex-row md:justify-between gap-3 items-start">
           <p className="uppercase font-extrabold md:text-[20px] text-[16px] text-dark">
             Миссия и ценности
