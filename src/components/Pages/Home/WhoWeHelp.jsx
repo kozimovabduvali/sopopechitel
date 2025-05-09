@@ -68,7 +68,7 @@ function WhoWeHelp() {
       <div>
         <div className="flex items-center justify-between gap-5">
           <h3 className="font-extrabold md:text-xl uppercase">Кому мы помогаем</h3>
-          <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5">
+          <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5">
             <span className="font-medium">Подробнее кому мы помогаем</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ function WhoWeHelp() {
         </h2>
 
         {/* Mobile Button */}
-        <button className="border border-dark rounded-xl md:hidden inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5 mt-8">
+        <button className="border border-dark rounded-xl md:hidden inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-8">
           <span className="font-medium">Подробнее кому мы помогаем</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

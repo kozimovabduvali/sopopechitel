@@ -7,7 +7,7 @@ function FinancialSupport() {
       <h2 className='font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%] mt-6 md:mt-8 lg:mt-10'>
         Мы принимаем спонсорскую помощь для обеспечения работы проекта: поддержки психологов, курирования наставников, проведения мероприятий и помощи детям
       </h2>
-      <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/85 mt-10 md:mt-15 lg:mt18
+      <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/75 mt-10 md:mt-15 lg:mt18
       '>
         <span className='font-semibold lg:text-xl'>Хочу помочь</span>
         <svg

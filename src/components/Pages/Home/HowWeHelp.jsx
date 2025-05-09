@@ -7,7 +7,7 @@ function HowWeHelp() {
       <div>
         <div className="flex items-center justify-between gap-5">
           <h3 className="font-extrabold md:text-xl uppercase">Как мы помогаем</h3>
-          <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5">
+          <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5">
             <span className="font-medium">Подробнее о модели работы</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ function HowWeHelp() {
             </p>
 
             {/* Mobile Button */}
-            <button className="border border-dark rounded-xl md:hidden inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5 mt-8">
+            <button className="border border-dark rounded-xl md:hidden inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-8">
               <span className="font-medium">Подробнее о модели работы</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

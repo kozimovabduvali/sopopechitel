@@ -14,7 +14,7 @@ function Hero() {
         <p className='max-w-170 font-medium text-gray text-sm md:text-xl mt-10 md:mt-6'>
           При участии наставников и специалистов проекта создаём среду для поддержки и развития детей в сложных жизненных обстоятельствах
         </p>
-        <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/85 mt-10 md:mt-15'>
+        <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/75 mt-10 md:mt-15'>
           <span className='font-semibold lg:text-xl'>Хочу помочь</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

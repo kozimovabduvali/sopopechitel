@@ -14,7 +14,7 @@ function OurGoal() {
             <h2 className='font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%]'>
               Формируем сообщество взрослых, готовых к осознанной и устойчивой поддержке детей
             </h2>
-            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5 mt-6">
+            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-6">
               <span className="font-medium">Как вы можете помочь</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ function OurGoal() {
             <h2 className='font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%]'>
               Создаём масштабируемую модель наставничества с методологиейи ИИ-сопровождением
             </h2>
-            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark/10 gap-3 h-9 px-5 mt-6">
+            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-6">
               <span className="font-medium">Как внедряем ИИ модель</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
