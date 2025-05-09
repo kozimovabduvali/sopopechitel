@@ -17,8 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Help" element={<Help />} />
-        <Route path="/aiSupport" element={<AiSupport />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/aisupport" element={<AiSupport />} />
         <Route path="/beneficiaries" element={<Beneficiaries />} />
       </Routes>
       <section className="mt-20 lg:mt-25 mb-20 max-w-330 mx-auto px-5">

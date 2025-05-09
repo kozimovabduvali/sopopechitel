@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="max-w-350 mx-auto px-4 pt-5">
+    <div className="max-w-350 mx-auto px-4 pt-20 lg:pt-15">
       <div className="flex flex-col text-center justify-center gap-4">
         <p className="py-1 w-fit self-center px-2 rounded-md border border-accent flex items-center gap-1 text-accent">
           <img src="/year.png" width={22} height={22} alt="" />О ФОНДЕ

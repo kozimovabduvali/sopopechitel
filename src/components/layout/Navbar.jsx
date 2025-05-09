@@ -20,7 +20,7 @@ function Navbar() {
     },
     {
       label: "ИИ сопровождениефонде",
-      to: "/ai-support",
+      to: "/aisupport",
     },
     {
       label: "Kонтакты",

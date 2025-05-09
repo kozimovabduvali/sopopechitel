@@ -7,7 +7,7 @@ import FinancialSupport from '../components/Pages/Help/FinancialSupport'
 function Help() {
   return (
     <>
-      <div className='max-w-330 mx-auto px-4 pt-5'>
+      <div className='max-w-330 mx-auto px-4 pt-20 lg:pt-15'>
         {/* Hero */}
         <Hero />
 
