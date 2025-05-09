@@ -113,7 +113,7 @@ function About() {
       </div>
 
       {/* Принцип работы */}
-      <div className="mt-10 flex flex-col gap-5">
+      <div className="mt-20 flex flex-col gap-5">
         <p className="uppercase font-extrabold md:text-[20px] text-[16px] text-dark">
           Принцип работы
         </p>

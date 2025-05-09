@@ -11,7 +11,7 @@ function Hero() {
         <h1 className='font-semibold text-4xl md:text-6xl lg:text-[80px]/[90%] mt-4 md:mt-6'>
           Внесите значительный вклад в развитие фонда, став наставником для ребёнка
         </h1>
-        <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark hover:text-white /75 mt-10 md:mt-15'>
+        <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/75 mt-10 md:mt-15'>
           <span className='font-semibold lg:text-xl'>Оставить заявку</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
