@@ -16,7 +16,7 @@ function HowWeHelp() {
               fill="none"
             >
               <path
-                fill="#0D2D42"
+                fill="currentColor"
                 d="M40.53 6.53a.75.75 0 0 0 0-1.06L35.757.697a.75.75 0 0 0-1.06 1.06L38.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L40.53 6.53ZM0 6v.75h40v-1.5H0V6Z"
               />
             </svg>
@@ -41,7 +41,7 @@ function HowWeHelp() {
                 fill="none"
               >
                 <path
-                  fill="#0D2D42"
+                  fill="currentColor"
                   d="M40.53 6.53a.75.75 0 0 0 0-1.06L35.757.697a.75.75 0 0 0-1.06 1.06L38.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L40.53 6.53ZM0 6v.75h40v-1.5H0V6Z"
                 />
               </svg>
