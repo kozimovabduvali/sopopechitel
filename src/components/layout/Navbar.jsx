@@ -61,7 +61,7 @@ function Navbar() {
             <Link
               key={i}
               to={item.to}
-              className={`${pathname === item.to && "text-accent font-bold"}`}
+              className={`${pathname === item.to && "text-accent"}`}
             >
               {item.label}
             </Link>

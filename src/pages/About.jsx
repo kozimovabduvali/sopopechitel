@@ -1,5 +1,4 @@
 import React from "react";
-import ImageShape from "../assets/images/shape.png";
 
 function About() {
   return (
@@ -257,11 +256,11 @@ function About() {
                 alt=""
               />
               <div className="space-y-4">
-                <h1 className="font-normal md:text-[32px] sm:text-[24px] text-[20px]">
+                <h1 className="font-normal md:text-[32px] sm:text-xl text-[20px]">
                   Кирилл Степаненко
                 </h1>
 
-                <ul className="text-gray text-[16px]">
+                <ul className="text-gray">
                   <li>
                     Серийный предприниматель, фаундер c опытом запуска более 5
                     цифровых продуктов.
