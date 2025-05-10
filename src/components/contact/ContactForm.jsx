@@ -28,7 +28,7 @@ export default function ContactForm() {
       return;
     }
 
-    const BOT_TOKEN = "7942217828:AAEyNY1Sw9DGSV91KwEXtpG-ieKplMQ04ac";
+    const BOT_TOKEN = "7500612376:AAFD_ZoJzIT3AQZbI_eRQmNFPrx95yV5rWg";
     const CHANNEL_ID = "-1002561077638";
 
     const message = `
