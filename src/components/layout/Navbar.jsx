@@ -19,20 +19,19 @@ function Navbar() {
       to: "/help",
     },
     {
-      label: "ИИ сопровождениефонде",
+      label: "ИИ сопровождение",
       to: "/aisupport",
     },
     {
       label: "Kонтакты",
-      to: "/contact",
+      // to: "/contact",
     },
   ];
 
   return (
     <nav
-      className={`flex items-center justify-between gap-5 ${
-        pathname !== "/" && "max-w-350 mx-auto px-4"
-      }`}
+      className={`flex items-center justify-between gap-5 ${pathname !== "/" && "max-w-350 mx-auto px-4"
+        }`}
     >
       {/* Logo */}
       <Link to="/">
@@ -42,16 +41,13 @@ function Navbar() {
       <button className="text-dark inline-block lg:hidden h-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
+          width={26}
+          height={18}
           fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="size-full"
         >
           <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            fill="#0D2D42"
+            d="M0 1.28C0 .94.137.615.38.375A1.31 1.31 0 0 1 1.3 0h23.4c.345 0 .675.135.92.375a1.27 1.27 0 0 1 0 1.81 1.31 1.31 0 0 1-.92.375H1.3a1.31 1.31 0 0 1-.92-.375A1.27 1.27 0 0 1 0 1.28ZM0 9c0-.34.137-.666.38-.906a1.31 1.31 0 0 1 .92-.374h23.4c.345 0 .675.134.92.374a1.27 1.27 0 0 1 0 1.81 1.31 1.31 0 0 1-.92.375H1.3a1.31 1.31 0 0 1-.92-.375A1.27 1.27 0 0 1 0 9Zm1.3 6.44a1.31 1.31 0 0 0-.92.375 1.27 1.27 0 0 0 0 1.81c.245.24.575.375.92.375h23.4c.345 0 .675-.135.92-.375a1.27 1.27 0 0 0 0-1.81 1.31 1.31 0 0 0-.92-.374H1.3Z"
           />
         </svg>
       </button>

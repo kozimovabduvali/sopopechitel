@@ -6,7 +6,7 @@ function Beneficiaries() {
   return (
 
     <>
-      <div className='max-w-330 mx-auto px-4 pt-20 lg:pt-15'>
+      <main className='max-w-330 mx-auto px-4 pt-20 lg:pt-15'>
         {/* HeroBenefic */}
         <HeroBenefic />
 
@@ -14,7 +14,7 @@ function Beneficiaries() {
         <section className='mt-20 md:mt-18 lg:mt-25'>
           <MentorProject />
         </section>
-      </div>
+      </main>
     </>
   )
 }

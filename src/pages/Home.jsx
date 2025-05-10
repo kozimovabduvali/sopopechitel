@@ -7,7 +7,7 @@ import OurGoal from "../components/Pages/Home/OurGoal";
 import WhoWeHelp from "../components/Pages/Home/WhoWeHelp";
 import HowWeHelp from "../components/Pages/Home/HowWeHelp";
 
-function Home() {
+function Home({ isDarkText }) {
   return (
     <>
       {/* Nav & Hero */}
@@ -31,7 +31,7 @@ function Home() {
         </div>
       </div>
       {/* Main */}
-      <main className="max-w-330 mx-auto px-5">
+      <main  className="max-w-330 mx-auto px-5">
         {/* Our Mission */}
         <section className="mt-20 lg:mt-25">
           <OurMission />

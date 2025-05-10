@@ -106,7 +106,7 @@ export default function ContactForm() {
       <div className="relative z-20 grid grid-cols-1 md:grid-cols-2">
         {/* Left */}
         <div className="flex items-start pl-4 py-4 md:pl-8 md:py-8">
-          <h2 className="md:text-[40px] sm:text-[32px] text-[20px] font-manrope font-semibold text-dark leading-tight">
+          <h2 className="md:text-[40px] sm:text-[32px] text-xl font-manrope font-semibold text-dark leading-tight">
             Мы ищем осознанных взрослых, чтобы подарить детям будущее, полное
             возможностей
           </h2>
@@ -115,10 +115,10 @@ export default function ContactForm() {
 
         {/* Right - Form */}
         <div className="px-4 py-4 md:px-8 md:py-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
             {/* Name */}
-            <div className="space-y-2">
-              <label htmlFor="name" className="block font-medium text-dark">
+            <div>
+              <label htmlFor="name" className="block font-medium text-base/[100%] text-dark py-2">
                 Ваше имя*
               </label>
               <input
@@ -134,8 +134,8 @@ export default function ContactForm() {
             </div>
 
             {/* Email */}
-            <div className="space-y-2">
-              <label htmlFor="email" className="block font-medium text-dark">
+            <div>
+              <label htmlFor="email" className="block font-medium text-dark py-2">
                 Ваш Email*
               </label>
               <input
@@ -152,15 +152,15 @@ export default function ContactForm() {
             </div>
 
             {/* Phone */}
-            <div className="space-y-2">
-              <label htmlFor="phone" className="block font-medium text-dark">
+            <div>
+              <label htmlFor="phone" className="block font-medium text-dark py-2">
                 Ваш телефон*
               </label>
               <input
                 id="phone"
                 name="phone"
                 value={formData.phone}
-                placeholder={getPlaceholder("phone", "+7 (888) 888 88 88")}
+                placeholder={getPlaceholder("phone", "+7 (___) ___ __ __")}
                 onChange={handleChange}
                 onFocus={() => setFocusedInput("phone")}
                 onBlur={() => setFocusedInput(null)}
@@ -169,11 +169,11 @@ export default function ContactForm() {
             </div>
 
             {/* Comment */}
-            <div className="space-y-2">
-              <label htmlFor="comment" className="block font-medium text-dark">
+            <div>
+              <label htmlFor="comment" className="block font-medium text-dark py-2">
                 Добавьте комментарий
               </label>
-              <textarea
+              <input
                 id="comment"
                 name="comment"
                 placeholder={getPlaceholder("comment", "Добавьте комментарий")}
@@ -181,7 +181,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 onFocus={() => setFocusedInput("comment")}
                 onBlur={() => setFocusedInput(null)}
-                className="w-full border-b border-gray bg-transparent focus:border-dark focus:outline-none rounded-none px-0 py-2 resize-none"
+                className="w-full border-b leading-none border-gray bg-transparent focus:border-dark focus:outline-none rounded-none px-0 py-2 resize-none"
               />
             </div>
 
@@ -196,7 +196,7 @@ export default function ContactForm() {
             </div>
 
             {/* Submit */}
-            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white gap-3 h-9 px-5">
+            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white gap-3 h-9 px-5 mt-6">
               <span className="font-medium">Оставить заявку</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="12" fill="none">
                 <path

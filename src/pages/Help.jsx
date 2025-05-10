@@ -7,25 +7,25 @@ import FinancialSupport from '../components/Pages/Help/FinancialSupport'
 function Help() {
   return (
     <>
-      <div className='max-w-330 mx-auto px-4 pt-20 lg:pt-15'>
+      <main className='max-w-330 mx-auto px-4 pt-20 lg:pt-15'>
         {/* Hero */}
         <Hero />
 
         {/* Mentor Project */}
-        <div className='mt-20 md:mt-18 lg:mt-25'>
+        <section className='mt-20 md:mt-18 lg:mt-25'>
           <MentorProject />
-        </div>
+        </section>
 
         {/* BecomeMentor */}
-        <div className='mt-20 md:mt-18 lg:mt-25'>
+        <section className='mt-20 md:mt-18 lg:mt-25'>
           <BecomeMentor />
-        </div>
+        </section>
 
         {/* FinancialSupport */}
-        <div className='mt-20 md:mt-18 lg:mt-25'>
+        <section className='mt-20 md:mt-18 lg:mt-25'>
           <FinancialSupport />
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   )
 }
