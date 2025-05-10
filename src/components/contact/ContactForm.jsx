@@ -16,10 +16,10 @@ export default function ContactForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    setInvalidFields((prev) => prev.filter((field) => field !== name)); // agar yozilsa, xatolikni olib tashla
+    setInvalidFields((prev) => prev.filter((field) => field !== name));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const requiredFields = ["name", "email", "phone"];
     const emptyFields = requiredFields.filter((field) => !formData[field]);
@@ -28,7 +28,53 @@ export default function ContactForm() {
       return;
     }
 
-    console.log("Form submitted:", formData);
+    const BOT_TOKEN = "7942217828:AAEyNY1Sw9DGSV91KwEXtpG-ieKplMQ04ac";
+    const CHANNEL_ID = "-1002561077638";
+
+    const message = `
+📋 Новая заявка:
+👤 Имя: ${formData.name}
+📧 Email: ${formData.email}
+📱 Телефон: ${formData.phone}
+💬 Комментарий: ${formData.comment || "Не указан"}
+    `;
+
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: CHANNEL_ID,
+            text: message,
+            parse_mode: "HTML",
+          }),
+        }
+      );
+
+      if (response.ok) {
+        alert("Ваша заявка успешно отправлена!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          comment: "",
+          agreement: false,
+        });
+      } else {
+        alert(
+          "Произошла ошибка при отправке заявки. Пожалуйста, попробуйте позже."
+        );
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert(
+        "Произошла ошибка при отправке заявки. Пожалуйста, попробуйте позже."
+      );
+    }
   };
 
   const getInputClass = (name) => {
@@ -65,6 +111,7 @@ export default function ContactForm() {
             возможностей
           </h2>
         </div>
+
 
         {/* Right - Form */}
         <div className="px-4 py-4 md:px-8 md:py-8">
