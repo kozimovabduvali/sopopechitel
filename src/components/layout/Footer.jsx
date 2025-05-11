@@ -41,12 +41,14 @@ const Footer = () => {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 border border-light-gray rounded-xl py-3 px-5 transition duration-200 hover:bg-light-gray/10"
+            className="flex items-center gap-5 border border-light-gray rounded-xl py-3 px-8 lg:px-13 transition duration-200 hover:bg-light-gray/10"
           >
             <span className="text-xl font-semibold text-light-gray">
               Наверх
             </span>
-            <img src="/icon.png" alt="" />
+            <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.03033 0.469671C6.73744 0.176777 6.26256 0.176777 5.96967 0.469671L1.1967 5.24264C0.903805 5.53554 0.903805 6.01041 1.1967 6.3033C1.48959 6.5962 1.96447 6.5962 2.25736 6.3033L6.5 2.06066L10.7426 6.3033C11.0355 6.59619 11.5104 6.59619 11.8033 6.3033C12.0962 6.01041 12.0962 5.53553 11.8033 5.24264L7.03033 0.469671ZM6.5 17L7.25 17L7.25 1L6.5 1L5.75 1L5.75 17L6.5 17Z" fill="#F8F9F9" />
+            </svg>
           </button>
         </div>
 
