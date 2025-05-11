@@ -8,11 +8,11 @@ function Hero() {
           <img className='size-4 lg:size-6' src={IconGlobe} alt="" />
           <span className='font-medium text-sm md:text-base'>СИСТЕМА НАСТАВНИЧЕСТВА</span>
         </div>
-        <h1 className='font-semibold text-4xl md:text-6xl lg:text-[80px]/[90%] mt-4 md:mt-6'>
+        <h1 className='font-semibold text-4xl md:text-6xl lg:text-[80px] leading-[90%] mt-4 md:mt-6'>
           Помогаем детям стать успешными взрослыми
         </h1>
-        <p className='max-w-170 font-medium text-gray text-sm md:text-xl mt-10 md:mt-6'>
-          При участии наставников и специалистов проекта создаём среду для поддержки и развития детей в сложных жизненных обстоятельствах
+        <p className='max-w-170 font-medium text-gray text-sm md:text-xl leading-[100%] mt-10 md:mt-6'>
+          При участии наставников и&nbsp;специалистов проекта создаём среду для поддержки и&nbsp;развития детей в&nbsp;сложных жизненных обстоятельствах
         </p>
         <button className='h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/75 mt-10 md:mt-15'>
           <span className='font-semibold lg:text-xl'>Хочу помочь</span>
