@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from '../../assets/icons/logo-footer.svg'
+
 
 const Footer = () => {
   const footerMenu = {
@@ -34,7 +36,7 @@ const Footer = () => {
         {/* Top part with logo and scroll up button */}
         <div className="flex items-center justify-between gap-3">
           <Link to="/">
-            <img src={"/footer-logo.png"} alt="Logo" />
+            <img src={Logo} alt="Logo" />
           </Link>
 
           <button
@@ -104,7 +106,7 @@ const Footer = () => {
                     {links.map((linkText, idx) => (
                       <li
                         key={idx}
-                        className="font-medium text-light-gray text-xl"
+                        className="font-medium text-light-gray md:text-xl"
                       >
                         <Link className="transition duration-200 hover:opacity-75" to={"#"}>{linkText}</Link>
                       </li>

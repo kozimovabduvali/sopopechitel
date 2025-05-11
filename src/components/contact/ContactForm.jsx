@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import IconLine from '../../assets/icons/contatc-line.svg';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -92,17 +93,7 @@ export default function ContactForm() {
     focusedInput === name ? "" : defaultText;
 
   return (
-    <div className="relative w-full min-h-[504px] overflow-hidden rounded-2xl">
-      {/* Background */}
-      <div
-        className="absolute inset-0 z-0 bg-[url('/contact-form-bg.png')] bg-cover bg-center"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute max-md:hidden bottom-0 left-0 z-10 w-1/2 h-full bg-[url('/contact-line.png')] bg-contain bg-left-bottom bg-no-repeat"
-        aria-hidden="true"
-      />
-
+    <div className="relative w-full bg-gradient-to-b to-[#D8FDFF] from-[#EDF2FE] overflow-hidden rounded-2xl">
       <div className="relative z-20 grid grid-cols-1 md:grid-cols-2">
         {/* Left */}
         <div className="flex items-start pl-4 py-4 md:pl-8 md:py-8">
@@ -211,6 +202,7 @@ export default function ContactForm() {
         {/* Mobile Decorative Line */}
         <img src="/contact-line.png" className="w-[359px] md:hidden z-10" alt="" />
       </div>
+      <img className="md:absolute left-0 bottom-0 z-0 h-34 md:h-45 lg:h-69" src={IconLine} alt="IconLine" />
     </div>
   );
 }
