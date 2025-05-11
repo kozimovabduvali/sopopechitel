@@ -27,7 +27,7 @@ function HowWeHelp() {
             <h2 className="max-w-190 font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%]">
               Форум-группы — ядро методологии работы наставника и ребёнка
             </h2>
-            <p className='font-medium lg:text-xl mt-6'>
+            <p className='font-medium lg:text-xl leading-[100%] mt-6'>
               Группы, из 2-3 наставника и до 10 детей, проводятся непосредственно наставниками и детьми, с периодическим привлечением психолога
             </p>
 
