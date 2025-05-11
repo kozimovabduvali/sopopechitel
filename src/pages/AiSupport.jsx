@@ -1,4 +1,3 @@
- 
 import Hero from '../components/Pages/Help/Hero'
 import HeroSupport from '../components/Pages/AiSupport/HeroSupport'
 import GroupsForum from '../components/Pages/AiSupport/GroupsForum'
