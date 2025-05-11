@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/Pages/About/Hero'
 import ProjectParticipants from '../components/Pages/About/ProjectParticipants'
+import MissionValues from '../components/Pages/About/MissionValues'
 
 export default function About() {
   return (
@@ -12,6 +13,11 @@ export default function About() {
         {/* Project participants */}
         <section className='mt-20 md:mt-18 lg:mt-25'>
           <ProjectParticipants />
+        </section>
+
+        {/* Project participants */}
+        <section className='mt-20 md:mt-18 lg:mt-25'>
+          <MissionValues />
         </section>
       </main>
     </>
