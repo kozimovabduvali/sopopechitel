@@ -16,21 +16,20 @@ function HowWeHelp() {
   }, [isInView, controls])
 
   const circleVariants = {
-    hidden: {
-      opacity: 0,
-      scale: 0.8,
-      background: "rgba(255, 255, 255, 0)",
-    },
-    visible: (i) => ({
-      opacity: 1,
-      scale: 1,
-      background: "rgba(255, 255, 255, 1)",
-      transition: {
-        opacity: { duration: 0.6, delay: i * 0.3 },
-        scale: { duration: 0.6, delay: i * 0.3 },
-        background: { duration: 0.8, delay: i * 0.3 },
-      },
+    hidden: (i) => ({
+      x: i === 0 ? 100 : i === 1 ? 0 : -10, // Start positions
+      zIndex: 3 - i, 
     }),
+    visible: {
+      x: 0,
+      zIndex: 0,
+      transition: {
+        type: "spring",
+        stiffness: 60,
+        damping: 12,
+        delay: 0.2,
+      },
+    },
   }
 
   return (
@@ -61,8 +60,6 @@ function HowWeHelp() {
               Группы, из 2-3 наставника и до 10 детей, проводятся непосредственно наставниками и детьми, с периодическим
               привлечением психолога
             </p>
-
-            {/* Mobile Button */}
             <motion.button
               className="border border-dark rounded-xl md:hidden inline-flex items-center transition duration-200 hover:bg-dark hover:text-white gap-3 h-9 px-5 mt-8"
               whileHover={{ scale: 1.05 }}
@@ -88,44 +85,24 @@ function HowWeHelp() {
         ref={ref}
         className="flex flex-col md:flex-row md:-space-x-5 -space-y-7 md:space-y-0 items-center justify-center text-center mt-10 md:mt-15 lg:mt-18"
       >
-        {/* Circle 1 */}
-        <motion.div
-          className="bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3"
-          variants={circleVariants}
-          initial="hidden"
-          custom={0}
-          animate={controls}
-        >
-          <h4 className="font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]">
-            Форум группа «Наставник-ребёнок»
-          </h4>
-        </motion.div>
-
-        {/* Circle 2 */}
-        <motion.div
-          className="bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3"
-          variants={circleVariants}
-          initial="hidden"
-          custom={1}
-          animate={controls}
-        >
-          <h4 className="font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]">
-            Форум группа «Наставник-ребёнок-психолог»
-          </h4>
-        </motion.div>
-
-        {/* Circle 3 */}
-        <motion.div
-          className="bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3"
-          variants={circleVariants}
-          initial="hidden"
-          custom={2}
-          animate={controls}
-        >
-          <h4 className="font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]">
-            Форум группа «Наставник-психолог»
-          </h4>
-        </motion.div>
+        {[ 
+          "Форум группа «Наставник-ребёнок»", 
+          "Форум группа «Наставник-ребёнок-психолог»", 
+          "Форум группа «Наставник-психолог»" 
+        ].map((title, i) => (
+          <motion.div
+            key={i}
+            className="bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3"
+            variants={circleVariants}
+            initial="hidden"
+            custom={i}
+            animate={controls}
+          >
+            <h4 className="font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]">
+              {title}
+            </h4>
+          </motion.div>
+        ))}
       </div>
     </>
   )
