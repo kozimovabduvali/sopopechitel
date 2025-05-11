@@ -38,7 +38,7 @@ function OurMission() {
       </div>
 
       {/* Bottom */}
-      <div className="grid md:grid-cols-3 gap-5 pt-10 md:pt-15 lg:pt-18">
+      <div className="max-w-7xl grid md:grid-cols-3 gap-5 pt-10 md:pt-15 lg:pt-18">
         {/* 1 */}
         <div className="bg-light-gray rounded-3xl p-4 lg:p-6">
           <div className="bg-gradient-to-b from-[#D8FDFF] to-[#EDF2FE] rounded-[10px] p-1.5 md:p-2.5 inline-flex items-center justify-center">

@@ -11,7 +11,7 @@ function Help() {
         <Hero />
 
         {/* Mentor Project */}
-        <section className='mt-20 md:mt-18 lg:mt-25'>
+        <section id='mentor-project' className='mt-20 md:mt-18 lg:mt-25'>
           <MentorProject />
         </section>
 

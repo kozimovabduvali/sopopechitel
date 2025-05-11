@@ -93,7 +93,7 @@ export default function ContactForm() {
     focusedInput === name ? "" : defaultText;
 
   return (
-    <div className="relative w-full bg-gradient-to-b to-[#D8FDFF] from-[#EDF2FE] overflow-hidden rounded-2xl">
+    <section className="relative w-full bg-gradient-to-b to-[#D8FDFF] from-[#EDF2FE] overflow-hidden rounded-2xl">
       <div className="relative z-20 grid grid-cols-1 md:grid-cols-2">
         {/* Left */}
         <div className="flex items-start pl-4 py-4 md:pl-8 md:py-8">
@@ -203,6 +203,6 @@ export default function ContactForm() {
         <img src="/contact-line.png" className="w-[359px] md:hidden z-10" alt="" />
       </div>
       <img className="md:absolute left-0 bottom-0 z-0 h-34 md:h-45 lg:h-69" src={IconLine} alt="IconLine" />
-    </div>
+    </section>
   );
 }

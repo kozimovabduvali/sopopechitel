@@ -50,7 +50,7 @@ function OurGoal() {
           </div>
         </div>
       </div>
-      <div className='max-w-200 mx-auto pt-35 md:pt-30'>
+      <div className='max-w-200 mx-auto pt-25 md:py-30'>
         <h2 className='font-semibold text-center text-[2rem]/[100%] md:text-5xl lg:text-[64px]/[100%]'>
           Мы даём ребёнку удочку, а не рыбу, чтобы он выловил нужный и эффективный путь для становления успешным взрослым
         </h2>

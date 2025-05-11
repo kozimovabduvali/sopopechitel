@@ -21,7 +21,7 @@ function App() {
         <Route path="/aisupport" element={<AiSupport />} />
         <Route path="/beneficiaries" element={<Beneficiaries />} />
       </Routes>
-      <section className="mt-20 lg:mt-25 mb-20 max-w-330 mx-auto px-5">
+      <section id="contact" className="mt-20 lg:mt-25 mb-20 max-w-330 mx-auto px-5">
         <ContactForm />
       </section>
       <Footer />

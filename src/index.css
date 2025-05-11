@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply text-dark font-manrope leading-[100%] tracking-[-2%];
+    @apply text-dark font-manrope leading-[100%] tracking-[-2%] overflow-x-hidden;
   }
 
   button {

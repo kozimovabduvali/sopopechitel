@@ -67,9 +67,9 @@ function WhoWeHelp() {
       {/* Section */}
       <div>
         <div className="flex items-center justify-between gap-5">
-          <h3 className="font-extrabold md:text-xl uppercase">Кому мы помогаем</h3>
+          <h3 className="font-extrabold md:text-xl uppercase leading-[100%]">Кому мы помогаем</h3>
           <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5">
-            <span className="font-medium">Подробнее кому мы помогаем</span>
+            <span className="font-medium text-sm md:text-base !leading-[100%]">Подробнее кому мы помогаем</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={41}
@@ -84,7 +84,7 @@ function WhoWeHelp() {
           </button>
         </div>
 
-        <h2 className="max-w-190 font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%] mt-6 md:mt-8 lg:mt-10">
+        <h2 className="max-w-190 font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%] mt-6 md:mt-8 lg:mt-10">
           Сотрудничаем с семейным центром помощи семье и детям
         </h2>
 
