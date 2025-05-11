@@ -1,4 +1,3 @@
-import React from 'react'
 import IconShape from '../../../assets/icons/shape.svg'
 
 const participants = [

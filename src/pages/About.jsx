@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import Hero from '../components/Pages/About/Hero'
 import ProjectParticipants from '../components/Pages/About/ProjectParticipants'
 import MissionValues from '../components/Pages/About/MissionValues'

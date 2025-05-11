@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import ImagePic from '../../../assets/icons/pic.svg'
 import ImagePic2 from '../../../assets/icons/pic2.svg'
 

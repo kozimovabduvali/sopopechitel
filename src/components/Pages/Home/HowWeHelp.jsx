@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageShape from '../../../assets/images/shape.png'
 
 function HowWeHelp() {

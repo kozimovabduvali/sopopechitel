@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageHero from '../../../assets/images/arm.png'
 
 function Hero() {

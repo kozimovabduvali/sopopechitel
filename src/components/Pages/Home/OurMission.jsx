@@ -1,4 +1,4 @@
-import React from 'react';
+ ;
 import IconGlobe from '../../../assets/images/globe.png';
 import IconTarget from '../../../assets/images/target.png';
 import IconAtom from '../../../assets/images/Atom.png';

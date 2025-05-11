@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import HeroBenefic from '../components/Pages/Beneficiaries/HeroBenefic'
 import MentorProject from '../components/Pages/Beneficiaries/MentorProject'
 

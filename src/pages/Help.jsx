@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import Hero from '../components/Pages/Help/Hero'
 import MentorProject from '../components/Pages/Help/MentorProject'
 import BecomeMentor from '../components/Pages/Help/BecomeMentor'
