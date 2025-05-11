@@ -180,7 +180,7 @@ export default function ContactForm() {
             <div className="flex items-start space-x-2">
               <label htmlFor="agreement" className="text-gray">
                 Нажимая кнопку Оставить заявку, вы соглашаетесь с условиями{" "}
-                <Link to="#" className="font-bold text-black">
+                <Link to="#" className="font-bold">
                   Пользовательского соглашения
                 </Link>
               </label>
