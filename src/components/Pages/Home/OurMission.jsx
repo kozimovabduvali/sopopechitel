@@ -100,7 +100,7 @@ function OurMission() {
             </svg>
           </div>
           <div className="mt-10">
-            <h4 className="text-2xl/[100%] lg:text-[2rem]/[100%]">Долгосрочная работа</h4>
+            <h4 className="text-2xl/[100%] lg:text-[2rem]/[100%]">Долгосрочная <br /> работа</h4>
             <p className="font-medium text-gray leading-[100%] mt-4">
               Формируем пары «ребёнок–наставник», где в первый год выстраиваются доверительные отношения, а затем — социальные маршруты развития ребёнка
             </p>
