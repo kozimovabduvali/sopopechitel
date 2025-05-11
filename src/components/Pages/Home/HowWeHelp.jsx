@@ -24,7 +24,7 @@ function HowWeHelp() {
         </div>
         <div className='flex flex-col lg:flex-row justify-between gap-x-5 gap-y-10 md:gap-y-15 mt-6 md:mt-8 lg:mt-10'>
           <div className='max-w-175 w-full'>
-            <h2 className="max-w-190 font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%]">
+            <h2 className="max-w-190 font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%]">
               Форум-группы — ядро методологии работы наставника и ребёнка
             </h2>
             <p className='font-medium lg:text-xl leading-[100%] mt-6'>
@@ -57,19 +57,19 @@ function HowWeHelp() {
       <div className='flex flex-col md:flex-row md:-space-x-5 -space-y-7 md:space-y-0 items-center justify-center text-center mt-10 md:mt-15 lg:mt-18'>
         {/* 1 */}
         <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
-          <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem]'>
+          <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]'>
             Форум группа «Наставник-ребёнок»
           </h4>
         </div>
         {/* 2 */}
         <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
-          <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem]'>
+          <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]'>
           Форум группа «Наставник-ребёнок-психолог»
           </h4>
         </div>
         {/* 3 */}
         <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-3'>
-          <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem]'>
+          <h4 className='font-semibold text-xl md:text-2xl lg:text-[2rem] leading-[100%]'>
           Форум группа «Наставник-психолог»
           </h4>
         </div>
