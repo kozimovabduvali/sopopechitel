@@ -31,7 +31,7 @@ function OurGoal() {
           </div>
           <div>
             <h2 className='font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%]'>
-              Создаём масштабируемую модель наставничества с методологиейи ИИ-сопровождением
+              Создаём масштабируемую модель наставничества с методологией ИИ-сопровождением
             </h2>
             <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-6">
               <span className="font-medium">Как внедряем ИИ модель</span>

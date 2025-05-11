@@ -74,7 +74,7 @@ const Footer = () => {
             </div>
 
             {/* Hidden on mobile */}
-            <div className="space-y-5 leading-none max-md:hidden">
+            <div className="space-y-5 leading-none max-md:hidden mt-37">
               <p className="text-gray font-medium sm:text-xl text-base">
                 Свидетельство о государственной регистрации автономной
                 некоммерческой организации регистрационный №1143400000380
@@ -119,7 +119,7 @@ const Footer = () => {
             </p>
 
             {/* Shown on mobile only */}
-            <div className="space-y-5 leading-none md:hidden max-md:mt-10">
+            <div className="space-y-5 leading-none md:hidden mt-10">
               <p className="text-gray font-medium sm:text-xl text-base">
                 Свидетельство о государственной регистрации автономной
                 некоммерческой организации регистрационный №1143400000380
