@@ -4,7 +4,7 @@ import ImageShape from '../../../assets/images/shape.png'
 function HowWeHelp() {
   return (
     <>
-      <div>
+      <div>  
         <div className="flex items-center justify-between gap-5">
           <h3 className="font-extrabold md:text-xl uppercase">Как мы помогаем</h3>
           <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5">
