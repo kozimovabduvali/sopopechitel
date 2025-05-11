@@ -1,4 +1,4 @@
- 
+import React from 'react'
 import IconGlobe from '../../../assets/icons/globe.svg'
 function Hero() {
   return (

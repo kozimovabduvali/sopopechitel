@@ -1,4 +1,4 @@
- 
+import React from 'react'
 import ImagePic3 from '../../../assets/icons/pic3.svg'
 import ImagePic4 from '../../../assets/icons/pic4.svg'
 import ImagePic5 from '../../../assets/icons/pic5.svg'
