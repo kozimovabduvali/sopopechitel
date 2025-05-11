@@ -77,18 +77,18 @@ const Footer = () => {
 
             {/* Hidden on mobile */}
             <div className="space-y-5 leading-none max-md:hidden mt-37">
-              <p className="text-gray font-medium sm:text-xl text-base">
+              <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 Свидетельство о государственной регистрации автономной
                 некоммерческой организации регистрационный №1143400000380
                 учетный №х
               </p>
-              <p className="text-gray font-medium sm:text-xl text-base">
+              <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 Автономная некоммерческая организация дополнительного
                 профессионального образования «Академия развития компетенций»
                 <br />
                 <span>ИНН 3 444 410 340 КПП 344 301 001</span>
               </p>
-              <p className="text-gray font-medium sm:text-xl text-base">
+              <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 @{new Date().getFullYear()} Сопопечители
               </p>
             </div>
@@ -122,18 +122,18 @@ const Footer = () => {
 
             {/* Shown on mobile only */}
             <div className="space-y-5 leading-none md:hidden mt-10">
-              <p className="text-gray font-medium sm:text-xl text-base">
+              <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 Свидетельство о государственной регистрации автономной
                 некоммерческой организации регистрационный №1143400000380
                 учетный №х
               </p>
-              <p className="text-gray font-medium sm:text-xl text-base">
+              <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 Автономная некоммерческая организация дополнительного
                 профессионального образования «Академия развития компетенций»
                 <br />
                 <span>ИНН 3 444 410 340 КПП 344 301 001</span>
               </p>
-              <p className="text-gray font-medium sm:text-xl text-base">
+              <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 @{new Date().getFullYear()} Сопопечители
               </p>
             </div>
