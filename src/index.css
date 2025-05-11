@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply font-manrope text-base/[100%] tracking-[-2%];
+    @apply text-dark font-manrope text-base/[100%] tracking-[-2%];
   }
 
   button {
