@@ -1,7 +1,7 @@
 
-function FoundersFund() {
+export default function FoundersFund() {
   return (
-    <>
+    <div>
       <div>
         <h3 className="font-extrabold md:text-xl uppercase">
           Создатели фонда
@@ -34,17 +34,15 @@ function FoundersFund() {
           <div className="flex-1">
             <h4 className="font-medium text-xl md:text-2xl lg:text-3xl leading-[100%]">
               Кирилл Степаненко
-             </h4>
+            </h4>
 
             <p className="font-medium text-gray text-sm lg:text-base leading-[100%] mt-4 md:mt-5">
               Серийный предприниматель, фаундер с опытом запуска более 5 цифровых продуктов.
               Задачи:— разработка, масштабирование и развитие продукта;— выстраивание стратегии роста;— управление командой;— внедрение технологий искусственного интеллекта в процессы
-             </p>
+            </p>
           </div>
         </div>
       </div>
-            
+    </div>
   )
 }
-
-export default FoundersFund
