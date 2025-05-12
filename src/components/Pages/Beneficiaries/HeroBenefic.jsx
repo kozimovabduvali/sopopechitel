@@ -20,7 +20,7 @@ function HeroBenefic() {
 
         <span className='font-medium text-sm md:text-base'>КОМУ ПОМОГАЕМ</span>
       </div>
-      <h1 className='font-semibold text-4xl md:text-6xl lg:text-[80px]/[90%] mt-4 md:mt-6'>
+      <h1 className='font-semibold text-4xl/[100%] md:text-6xl/[100%] lg:text-[80px]/[90%] mt-4 md:mt-6'>
         Мы верим, что каждый ребёнок заслуживает внимания, заботы и возможности раскрыть свой потенциал
       </h1>
     </div>

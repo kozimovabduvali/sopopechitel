@@ -11,7 +11,7 @@ function MentorProject() {
           <h2 className="max-w-190 font-semibold text-xl md:text-[2rem]/[100%] lg:text-[2.5rem]/[100%]">
             Наставничество — это осознанная ответственная миссия
           </h2>
-          <p className='max-w-102.5 md:ml-auto font-medium text-sm md:text-base lg:text-xl'>
+          <p className='max-w-102.5 md:ml-auto font-medium text-sm md:text-base lg:text-xl leading-[100%'>
             Мы тщательно готовим каждого наставника, чтобы его участие в жизни ребёнка было безопасным, полезным и комфортным для обеих сторон
           </p>
         </div>
