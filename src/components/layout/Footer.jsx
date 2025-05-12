@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Logo from "../../assets/icons/logo-footer.svg";
 
 const Footer = () => {
@@ -33,7 +34,6 @@ const Footer = () => {
   return (
     <div className="bg-dark mt-20 lg:mt-25">
       <div className="max-w-330 mx-auto px-5 text-light-gray py-5 h-full">
-        {/* Logo and scroll button */}
         <div className="flex items-center justify-between gap-3">
           <Link to="/">
             <img src={Logo} alt="Logo" />
@@ -52,9 +52,7 @@ const Footer = () => {
           </button>
         </div>
 
-        {/* Content */}
         <div className="md:flex flex-row justify-between md:min-h-150 md:gap-10 gap-5 mt-10 h-full">
-          {/* Left Column */}
           <div className="md:w-1/2 flex flex-col gap-3 justify-between md:min-h-150 h-full">
             <div className="max-md:flex max-sm:flex-col">
               <div>
@@ -71,7 +69,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Hidden on mobile */}
             <div className="space-y-5 leading-none max-md:hidden mt-37">
               <p className="text-gray font-medium sm:text-xl text-base leading-[100%]">
                 Свидетельство о государственной регистрации автономной некоммерческой организации регистрационный №1143400000380 учетный №х
@@ -87,19 +84,27 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right Column */}
           <div className="md:w-1/2 h-full max-md:mt-10">
             <div className="grid grid-cols-2 gap-10">
               {Object.entries(footerMenu).map(([sectionTitle, links], index) => (
                 <ul key={index} className="space-y-4 leading-none">
                   <li className="uppercase font-normal text-gray sm:text-base text-sm">{sectionTitle}</li>
-                  {links.map(({ text, to }, idx) => (
-                    <li key={idx} className="font-medium text-light-gray md:text-xl">
-                      <Link className="transition duration-200 hover:opacity-75" to={to}>
-                        {text}
-                      </Link>
-                    </li>
-                  ))}
+                  {links.map(({ text, to }, idx) => {
+                    const isHash = to.startsWith("#");
+                    return (
+                      <li key={idx} className="font-medium text-light-gray md:text-xl">
+                        {isHash ? (
+                          <HashLink smooth to={to} className="transition duration-200 hover:opacity-75">
+                            {text}
+                          </HashLink>
+                        ) : (
+                          <Link to={to} className="transition duration-200 hover:opacity-75">
+                            {text}
+                          </Link>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               ))}
             </div>
@@ -108,7 +113,6 @@ const Footer = () => {
               Политика обработки персональных данных др политики
             </p>
 
-            {/* Shown on mobile only */}
             <div className="space-y-5 leading-none md:hidden mt-10">
               <p className="text-gray font-medium sm:text-xl text-sm leading-[100%]">
                 Свидетельство о государственной регистрации автономной некоммерческой организации регистрационный №1143400000380 учетный №х
