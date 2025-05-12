@@ -11,7 +11,7 @@ export default function FoundersFund() {
         </h2>
       </div>
 
-      <div className='max-w-212 md:ml-auto mt-10 md:mt-15 lg:mt-18 space-y-8 md:space-y-5'>
+      <div className='max-w-212 md:ml-auto mt-10 md:mt-15 lg:mt-18 space-y-10'>
         {/* 1 */}
         <div className="flex flex-col md:flex-row md:items-end gap-x-6 gap-y-4">
           <div className="bg-dark/20 rounded-2xl w-53 md:w-80 lg:w-103 h-63 md:h-80 lg:h-120">

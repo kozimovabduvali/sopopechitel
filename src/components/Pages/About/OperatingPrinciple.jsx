@@ -1,11 +1,10 @@
-import React from 'react'
 
 function OperatingPrinciple() {
   return (
     <>
       <div>
         <h3 className='font-extrabold text-xl leading-[100%]'>Принцип работы</h3>
-        <h2 className='font-semibold text-xl md:text-[2rem] lg:text-[40px] leading-[100%] mt-6 md:mt-8 lg:mt-10'>
+        <h2 className='max-w-210 font-semibold text-xl md:text-[2rem] lg:text-[40px] leading-[100%] mt-6 md:mt-8 lg:mt-10'>
           Создаем систему взаимодействия между наставником и ребёнком
         </h2>
 
