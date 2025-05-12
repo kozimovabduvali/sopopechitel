@@ -4,7 +4,7 @@ function OperatingPrinciple() {
   return (
     <>
       <div>
-        <h3 className='font-extrabold leading-[100%]'>Принцип работы</h3>
+        <h3 className='font-extrabold text-xl leading-[100%]'>Принцип работы</h3>
         <h2 className='font-semibold text-xl md:text-[2rem] lg:text-[40px] leading-[100%] mt-6 md:mt-8 lg:mt-10'>
           Создаем систему взаимодействия между наставником и ребёнком
         </h2>
@@ -29,7 +29,6 @@ function OperatingPrinciple() {
           <h2 className='font-bold text-[32px] md:text-5xl lg:text-[64px] leading-[100%] tracking-[-2%] lg:tracking-[-4%]'>
             Мы&nbsp;стремимся выстроить для каждого ребёнка индивидуальный путь поддержки, учитывая его цели и&nbsp;жизненные обстоятельства
           </h2>
-
         </div>
       </div>
     </>
