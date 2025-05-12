@@ -34,7 +34,7 @@ function ModelWork() {
               <h3 className='font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%] mt-6 md:mt-8 lg:mt-10'>
                 {card.title}
               </h3>
-              <p className="font-medium text-sm lg:text-base leading-[100%] mt-4 md:mt-6">
+              <p className="font-medium text-gray text-sm lg:text-base leading-[100%] mt-4 md:mt-6">
                 {card.text}
               </p>
             </div>
