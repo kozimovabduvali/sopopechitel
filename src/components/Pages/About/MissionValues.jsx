@@ -15,13 +15,13 @@ function MissionValues() {
       <div className='uppercase flex flex-col md:flex-row md:-space-x-5 -space-y-7 md:space-y-0 items-center justify-center text-center mt-10 md:mt-15 lg:mt-18'>
         {/* 1 */}
         <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-1 lg:px-6 xl:px-10'>
-          <h4 className='font-extrabold md:text-xl lg:text-2xl xl:text-[2rem] leading-[100%]leading-[100%]'>
+          <h4 className='font-extrabold md:text-xl lg:text-2xl xl:text-[2rem] leading-[100%]'>
             безопасность, равенство, доверие
           </h4>
         </div>
         {/* 2 */}
         <div className='bg-white border-[0.4px] border-accent rounded-full size-50 md:size-60 lg:size-80 xl:size-110 inline-flex items-center justify-center px-1 lg:px-6 xl:px-10'>
-          <h4 className='font-extrabold md:text-xl lg:text-2xl xl:text-[2rem] leading-[100%]leading-[100%]'>
+          <h4 className='font-extrabold md:text-xl lg:text-2xl xl:text-[2rem] leading-[100%]'>
             многоуровневая система поддержки
           </h4>
         </div>
