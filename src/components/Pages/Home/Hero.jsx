@@ -8,7 +8,7 @@ function Hero() {
           <img className='size-4 lg:size-6' src={IconGlobe} alt="" />
           <span className='font-medium text-sm md:text-base'>СИСТЕМА НАСТАВНИЧЕСТВА</span>
         </div>
-        <h1 className='font-semibold text-4xl md:text-6xl lg:text-[80px] leading-[90%] mt-4 md:mt-6'>
+        <h1 className='font-semibold text-4xl md:text-6xl lg:text-[80px] tracking-[-2%] lg:tracking-[-4%] leading-[90%] mt-4 md:mt-6'>
           Помогаем детям стать успешными взрослыми
         </h1>
         <p className='max-w-170 font-medium text-gray text-sm md:text-xl leading-[100%] mt-10 md:mt-6'>
