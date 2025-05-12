@@ -3,6 +3,7 @@ import IconGlobe from "../../../assets/images/globe.png";
 import IconTarget from "../../../assets/images/target.png";
 import IconAtom from "../../../assets/images/atom.png";
 import HighlightTexts from "../../shared/HighlightTexts";
+import ButtonLink from "../../shared/ButtonLink";
 
 function OurMission() {
   return (
@@ -11,15 +12,7 @@ function OurMission() {
       <div>
         <div className="flex items-center justify-between gap-5">
           <h3 className="font-extrabold md:text-xl uppercase">Наша миссия</h3>
-          <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark hover:text-white gap-3 h-9 px-5">
-            <span className="font-medium">Подробнее о фонде</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width={41} height={12} fill="none">
-              <path
-                fill="currentColor"
-                d="M40.53 6.53a.75.75 0 0 0 0-1.06L35.757.697a.75.75 0 0 0-1.06 1.06L38.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L40.53 6.53ZM0 6v.75h40v-1.5H0V6Z"
-              />
-            </svg>
-          </button>
+          <ButtonLink arrowRight>Подробнее о фонде</ButtonLink>
         </div>
 
         <HighlightTexts
@@ -42,7 +35,7 @@ function OurMission() {
         </button>
       </div>
 
-      <div className="relative">
+      {/* <div className="relative">
         <h3 className="font-extrabold md:text-xl uppercase">Наша миссия</h3>
         <HighlightTexts
           text={
@@ -61,7 +54,7 @@ function OurMission() {
             />
           </svg>
         </button>
-      </div>
+      </div> */}
 
       {/* Bottom */}
       <div className="max-w-7xl grid md:grid-cols-3 gap-5 pt-10 md:pt-15 lg:pt-18">
