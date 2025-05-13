@@ -21,7 +21,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/aisupport" element={<AiSupport />} />
         <Route path="/beneficiaries" element={<Beneficiaries />} />
-        <Route path="*" element={NotFound} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <section id="contact" className="mt-20 lg:mt-25 mb-20 max-w-330 mx-auto px-5">
         <ContactForm />
