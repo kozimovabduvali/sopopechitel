@@ -7,6 +7,7 @@ import Help from "./pages/Help";
 import Navbar from "./components/layout/Navbar";
 import ContactForm from "./components/contact/ContactForm";
 import Footer from "./components/layout/Footer";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const { pathname } = useLocation();
@@ -20,6 +21,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/aisupport" element={<AiSupport />} />
         <Route path="/beneficiaries" element={<Beneficiaries />} />
+        <Route path="*" element={NotFound} />
       </Routes>
       <section id="contact" className="mt-20 lg:mt-25 mb-20 max-w-330 mx-auto px-5">
         <ContactForm />
