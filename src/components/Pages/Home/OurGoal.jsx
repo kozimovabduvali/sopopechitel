@@ -1,62 +1,47 @@
-import React from 'react'
+import React from "react";
+import HighlightTexts from "../../shared/HighlightTexts";
+import ButtonLink from "../../shared/ButtonLink";
 
 function OurGoal() {
   return (
     <div>
-      <h3 className='font-extrabold md:text-xl uppercase'>Наша цель</h3>
-      <div className='flex flex-col md:flex-row gap-x-5 md:gap-x-10 lg:gap-x-19 gap-y-10 mt-6 md:mt-8 lg:mt-10'>
-        <p className='lg:max-w-90 leading-[100%] font-medium md:text-xl'>
+      <h3 className="font-extrabold md:text-xl uppercase">Наша цель</h3>
+      <div className="flex flex-col md:flex-row gap-x-5 md:gap-x-10 lg:gap-x-19 gap-y-10 mt-6 md:mt-8 lg:mt-10">
+        <p className="lg:max-w-90 leading-[100%] font-medium md:text-xl">
           Стремимся дать каждому ребёнку шанс вырасти благополучным взрослым
         </p>
         {/* Right */}
-        <div className='w-full max-w-211.5 space-y-8 md:space-y-15 lg:space-y-18 ml-auto'>
+        <div className="w-full max-w-211.5 space-y-8 md:space-y-15 lg:space-y-18 ml-auto">
           <div>
-            <h2 className='font-semibold text-xl md:text-[2rem]  lg:text-[2.5rem] leading-[100%]'>
-            Формируем сообщество взрослых, готовых к&nbsp;осознанной и&nbsp;устойчивой поддержке детей
-            </h2>
-            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-6">
-              <span className="font-medium">Как вы можете помочь</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={41}
-                height={12}
-                fill="none"
-              >
-                <path
-                  fill="currentColor"
-                  d="M40.53 6.53a.75.75 0 0 0 0-1.06L35.757.697a.75.75 0 0 0-1.06 1.06L38.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L40.53 6.53ZM0 6v.75h40v-1.5H0V6Z"
-                />
-              </svg>
-            </button>
+            <HighlightTexts
+              text={"Формируем сообщество взрослых, готовых к осознанной и устойчивой поддержке детей"}
+              wordClassName="font-semibold text-xl md:text-[2rem]  lg:text-[2.5rem] leading-[100%]"
+            />
+
+            <ButtonLink arrowRight className="mt-6">
+              Как вы можете помочь
+            </ButtonLink>
           </div>
           <div>
-            <h2 className='font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%]'>
-            Создаём масштабируемую модель наставничества с&nbsp;методологиейи&nbsp;ИИ-сопровождением
-            </h2>
-            <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-6">
-              <span className="font-medium">Как внедряем ИИ модель</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={41}
-                height={12}
-                fill="none"
-              >
-                <path
-                  fill="currentColor"
-                  d="M40.53 6.53a.75.75 0 0 0 0-1.06L35.757.697a.75.75 0 0 0-1.06 1.06L38.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L40.53 6.53ZM0 6v.75h40v-1.5H0V6Z"
-                />
-              </svg>
-            </button>
+            <HighlightTexts
+              text={"Создаём масштабируемую модель наставничества с методологиейи ИИ-сопровождением"}
+              wordClassName="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%]"
+            />
+
+            <ButtonLink arrowRight className="mt-6">
+              Как внедряем ИИ модель
+            </ButtonLink>
           </div>
         </div>
       </div>
-      <div className='max-w-200 mx-auto pt-25 md:py-30'>
-        <h2 className='font-semibold text-center text-[2rem]/[100%] md:text-5xl lg:text-[64px]/[100%]'>
-          Мы даём ребёнку удочку, а не рыбу, чтобы он выловил нужный и эффективный путь для становления успешным взрослым
-        </h2>
-      </div>
+
+      <HighlightTexts
+        containerClassName="max-w-200 mx-auto pt-25 md:py-30"
+        text={"Создаём масштабируемую модель наставничества с методологиейи ИИ-сопровождением"}
+        wordClassName="font-semibold text-center text-[2rem]/[100%] md:text-5xl lg:text-[64px]/[100%]"
+      />
     </div>
-  )
+  );
 }
 
-export default OurGoal
+export default OurGoal;
