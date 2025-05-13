@@ -120,7 +120,6 @@ export default function Hero() {
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.83077 0.236482L11.9902 10.3905L22.0417 0.338426C22.7267 -0.271743 23.4357 0.09256 23.719 0.398394C23.9007 0.619875 23.9944 0.90057 23.9823 1.18682C23.9701 1.47307 23.8529 1.74479 23.653 1.95005L13.6 12.0006L23.653 22.0481C24.0997 22.4229 24.0997 23.1575 23.7415 23.5683C23.3817 23.9776 22.7222 24.2145 22.1002 23.7287L11.9902 13.6107L1.86824 23.7332C1.42457 24.1305 0.693111 24.0496 0.33188 23.6553C-0.0308502 23.2595 -0.168748 22.5759 0.294408 22.0931L10.3804 12.0006L0.336376 1.95005C-0.0308505 1.54527 -0.158256 0.804673 0.336376 0.338426C0.831008 -0.127821 1.56846 -0.0633555 1.83077 0.236482Z" fill="#626D77" />
               </svg>
-
             </button>
 
             {/* Left Text & Image */}
@@ -128,7 +127,7 @@ export default function Hero() {
               <h2 className='font-semibold text-xl md:text-[32px] leading-[100%]'>
                 Ваш отклик — наша опора. Оставьте свои контактные данные и мы расскажем, как ваше участие может изменить будущее детей
               </h2>
-              <img className='absolute z-0 top-1/4 md:top-1/3 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 lg:bottom-0' src={ImageGlobus} alt="ImageGlobus" />
+              <img className='absolute z-0 top-1/4 md:top-1/3 lg:top-auto left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-0 lg:bottom-0' src={ImageGlobus} alt="ImageGlobus" />
             </div>
 
             {/* Right Form */}
