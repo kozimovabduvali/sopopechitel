@@ -222,8 +222,8 @@ export default function Hero() {
 
                     {/* Agreement */}
                     <div className="text-sm lg:text-base leading-[100%] text-gray">
-                      Нажимая кнопку Отправить, вы соглашаетесь на обработку персональных данных в соответствии с
-                      <Link to="#" className='font-medium text-dark'>
+                      Нажимая кнопку Отправить, вы соглашаетесь на обработку персональных данных в соответствии c 
+                       <Link to="#" className='font-medium text-dark'> {" "}
                         Политикой конфиденциальности
                       </Link>
                     </div>
