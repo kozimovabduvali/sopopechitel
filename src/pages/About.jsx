@@ -3,6 +3,7 @@ import ProjectParticipants from '../components/Pages/About/ProjectParticipants'
 import MissionValues from '../components/Pages/About/MissionValues'
 import OperatingPrinciple from '../components/Pages/About/OperatingPrinciple'
 import ModelWork from '../components/Pages/About/ModelWork'
+import FoundersFund from '../components/Pages/About/FoundersFund'
 
 export default function About() {
   return (
@@ -29,6 +30,11 @@ export default function About() {
         {/* Model Work */}
         <section className='mt-20 md:mt-18 lg:mt-25'>
           <ModelWork />
+        </section>
+
+        {/* Model Work */}
+        <section className='mt-20 md:mt-18 lg:mt-25'>
+          <FoundersFund />
         </section>
       </main>
     </>

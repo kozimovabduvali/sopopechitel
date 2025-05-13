@@ -48,7 +48,7 @@ function GroupsForum() {
               <img src={item.img} alt={`pic${index + 3}`} />
             </div>
             <div className="mt-6 md:mt-8 lg:mt-10">
-              <h4 className="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%]">
+              <h4 className="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] !leading-[100%]">
                 {item.title}
               </h4>
               <p className="font-medium text-sm lg:text-base leading-[100%] mt-4 md:mt-6">

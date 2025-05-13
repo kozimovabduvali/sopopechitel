@@ -18,7 +18,7 @@ function ModelWork() {
   return (
     <>
       <div className='flex flex-col md:flex-row gap-y-6'>
-        <h3 className='fonextrabold leading-[100%] text-xl'>Модель работы</h3>
+        <h3 className='font-extrabold leading-[100%] text-xl '>Модель работы</h3>
         <p className='md:text-2xl lg:text-[32px] leading-[100%] max-w-212 md:ml-auto'>
           Работа с&nbsp;участниками проекта основана по&nbsp;модели форум-групп. Для того чтобы наставничество было комфортным и&nbsp;эффективным для обеих сторон, на&nbsp;начальном этапе проводится индивидуальная работа с&nbsp;психологом. Это гарантирует безопасность, поддержку и&nbsp;способствует гармоничному развитию отношений между наставником и&nbsp;ребёнком
         </p>
@@ -34,7 +34,7 @@ function ModelWork() {
               <h3 className='font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%] mt-6 md:mt-8 lg:mt-10'>
                 {card.title}
               </h3>
-              <p className="font-medium text-sm lg:text-base leading-[100%] mt-4 md:mt-6">
+              <p className="font-medium text-gray text-sm lg:text-base leading-[100%] mt-4 md:mt-6">
                 {card.text}
               </p>
             </div>
