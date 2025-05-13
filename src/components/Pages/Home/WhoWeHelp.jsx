@@ -1,4 +1,3 @@
-import React from 'react'
 import UserImage1 from '../../../assets/images/user_ilina.png'
 import UserImage2 from '../../../assets/images/user_2.png'
 import UserImage3 from '../../../assets/images/user_3.png'
@@ -6,7 +5,9 @@ import UserImage4 from '../../../assets/images/user_4.png'
 import UserImage5 from '../../../assets/images/user_5.png'
 import UserImage6 from '../../../assets/images/user_6.png'
 import UserImage7 from '../../../assets/images/user_7.png'
+import HighlightTexts from "../../shared/HighlightTexts";
 import { Swiper, SwiperSlide } from 'swiper/react'
+
 import 'swiper/css'
 
 const cardsData = [
@@ -67,9 +68,9 @@ function WhoWeHelp() {
       {/* Section */}
       <div>
         <div className="flex items-center justify-between gap-5">
-          <h3 className="font-extrabold md:text-xl uppercase leading-[100%]">Кому мы помогаем</h3>
+          <h3 className="font-extrabold md:text-xl uppercase  leading-none">Кому мы помогаем</h3>
           <button className="border border-dark rounded-xl hidden md:inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5">
-            <span className="font-medium text-sm md:text-base !leading-[100%]">Подробнее кому мы помогаем</span>
+            <span className="font-medium text-sm md:text-base ! leading-none">Подробнее кому мы помогаем</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={41}
@@ -83,10 +84,7 @@ function WhoWeHelp() {
             </svg>
           </button>
         </div>
-
-        <h2 className="max-w-190 font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%] mt-6 md:mt-8 lg:mt-10">
-          Сотрудничаем с семейным центром помощи семье и детям
-        </h2>
+        <HighlightTexts containerClassName='max-w-190  mt-6 md:mt-8 lg:mt-10' wordClassName='font-semibold text-xl md:text-[2rem] lg:text-[2.5rem]  leading-none' text="Сотрудничаем с семейным центром помощи семье и детям" />
 
         {/* Mobile Button */}
         <button className="border border-dark rounded-xl md:hidden inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-8">

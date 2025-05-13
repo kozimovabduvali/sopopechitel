@@ -97,7 +97,7 @@ export default function ContactForm() {
       <div className="relative z-20 grid grid-cols-1 md:grid-cols-2">
         {/* Left */}
         <div className="flex items-start pl-4 py-4 md:pl-8 md:py-8">
-          <h2 className="md:text-[40px] sm:text-[32px] text-xl font-manrope font-semibold text-dark leading-[100%]">
+          <h2 className="md:text-[40px] sm:text-[32px] text-xl font-manrope font-semibold text-dark  leading-none">
             Мы ищем осознанных взрослых, чтобы подарить детям будущее, полное
             возможностей
           </h2>

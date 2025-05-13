@@ -12,11 +12,11 @@ function NotFound() {
             className="size-full"
           />
         </div>
-        <h2 className="text-xl md:text-[32px] lg:text-[40px] font-semibold leading-[100%] mt-8">
+        <h2 className="text-xl md:text-[32px] lg:text-[40px] font-semibold  leading-none mt-8">
           Страница не найдена
         </h2>
 
-        <p className="font-semibold text-sm md:text-base mt-6 max-w-170 mx-auto leading-[100%] tracking-[-2%]">
+        <p className="font-semibold text-sm md:text-base mt-6 max-w-170 mx-auto  leading-none tracking-[-2%]">
           Кажется, такой страницы не существует или она была перемещена.
           Вы можете вернуться на главную или воспользоваться меню
         </p>

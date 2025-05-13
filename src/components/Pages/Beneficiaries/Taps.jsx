@@ -209,11 +209,11 @@ function Taps() {
                   <img src={card.image || "/placeholder.svg"} alt={card.name} />
                 </div>
                 <div className="space-y-4 mt-10 lg:mt-15">
-                  <h5 className="text-2xl leading-[100%]">{card.name}</h5>
-                  <span className="inline-block font-medium text-gray text-sm lg:text-base leading-[100%]">
+                  <h5 className="text-2xl  leading-none">{card.name}</h5>
+                  <span className="inline-block font-medium text-gray text-sm lg:text-base  leading-none">
                     {card.age}
                   </span>
-                  <p className="font-medium text-gray text-sm lg:text-base leading-[100%]">{card.desc}</p>
+                  <p className="font-medium text-gray text-sm lg:text-base  leading-none">{card.desc}</p>
                 </div>
               </div>
               <button
@@ -238,7 +238,7 @@ function Taps() {
               onClick={handleShowMore}
               className="w-max flex items-center justify-center border border-gray text-gray rounded-[40px] h-9 lg:h-11.5 py-2 px-5 mx-auto transition duration-200 hover:bg-dark/10"
             >
-              <span className="font-semibold lg:text-xl leading-[100%]">
+              <span className="font-semibold lg:text-xl  leading-none">
                 {visibleCount >= filteredCards.length ? "Скрыть" : "Загрузить ещё"}
               </span>
             </button>
@@ -265,7 +265,7 @@ function Taps() {
 
             {/* Left Text & Image */}
             <div className="pr-10">
-              <h2 className="font-semibold text-xl md:text-[32px] leading-[100%]">
+              <h2 className="font-semibold text-xl md:text-[32px]  leading-none">
                 {selectedChild ? (
                   <>
                     Хотите стать наставником для <span className="text-accent">{selectedChild.name}</span> ?
@@ -292,7 +292,7 @@ function Taps() {
                     <div>
                       <label
                         htmlFor="name"
-                        className="block font-medium text-sm lg:text-base text-dark leading-[100%] py-2"
+                        className="block font-medium text-sm lg:text-base text-dark  leading-none py-2"
                       >
                         Введите имя
                       </label>
@@ -312,7 +312,7 @@ function Taps() {
                     <div>
                       <label
                         htmlFor="phone"
-                        className="block font-medium text-sm lg:text-base text-dark leading-[100%] py-2"
+                        className="block font-medium text-sm lg:text-base text-dark  leading-none py-2"
                       >
                         Ваш телефон*
                       </label>
@@ -330,7 +330,7 @@ function Taps() {
 
                     {/* Способ связи */}
                     <div>
-                      <p className="font-medium text-sm lg:text-base text-dark leading-[100%]">Способ связи</p>
+                      <p className="font-medium text-sm lg:text-base text-dark  leading-none">Способ связи</p>
 
                       <div className="flex flex-wrap items-center gap-4 pt-4">
                         <Link
@@ -350,7 +350,7 @@ function Taps() {
                             />
                           </svg>
 
-                          <span className="font-medium text-sm lg:text-base leading-[100%]">Телефон</span>
+                          <span className="font-medium text-sm lg:text-base  leading-none">Телефон</span>
                         </Link>
                         <Link
                           to="#"
@@ -369,7 +369,7 @@ function Taps() {
                             />
                           </svg>
 
-                          <span className="font-medium text-sm lg:text-base leading-[100%]">WhatsApp</span>
+                          <span className="font-medium text-sm lg:text-base  leading-none">WhatsApp</span>
                         </Link>
                         <Link
                           to="#"
@@ -402,7 +402,7 @@ function Taps() {
                               </linearGradient>
                             </defs>
                           </svg>
-                          <span className="font-medium text-sm lg:text-base leading-[100%]">Telegram</span>
+                          <span className="font-medium text-sm lg:text-base  leading-none">Telegram</span>
                         </Link>
                       </div>
                     </div>
@@ -411,7 +411,7 @@ function Taps() {
                     <div>
                       <label
                         htmlFor="comment"
-                        className="block font-medium text-sm lg:text-base text-dark leading-[100%] py-2"
+                        className="block font-medium text-sm lg:text-base text-dark  leading-none py-2"
                       >
                         Добавьте комментарий
                       </label>
@@ -428,7 +428,7 @@ function Taps() {
                     </div>
 
                     {/* Agreement */}
-                    <div className="text-sm lg:text-base leading-[100%] text-gray">
+                    <div className="text-sm lg:text-base  leading-none text-gray">
                       Нажимая кнопку Отправить, вы соглашаетесь на обработку персональных данных в соответствии с{" "}
                       <Link to="#" className="font-medium text-dark">
                         Политикой конфиденциальности

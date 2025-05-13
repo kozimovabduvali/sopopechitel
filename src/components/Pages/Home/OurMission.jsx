@@ -34,7 +34,7 @@ function OurMission() {
           </div>
           <div className="mt-10">
             <h4 className="text-2xl/[100%] lg:text-[2rem]/[100%]">Безопасность и&nbsp;доверие</h4>
-            <p className="font-medium text-gray leading-[100%] mt-4">
+            <p className="font-medium text-gray  leading-none mt-4">
               Работаем с&nbsp;детьми, которые остались без попечения родителей, и&nbsp;через систему наставничества
               создаём для них среду доверия, развития и&nbsp;поддержки
             </p>
@@ -47,7 +47,7 @@ function OurMission() {
           </div>
           <div className="mt-10">
             <h4 className="text-2xl/[100%] lg:text-[2rem]/[100%]">Ответственное наставничество</h4>
-            <p className="font-medium text-gray leading-[100%] mt-4">
+            <p className="font-medium text-gray  leading-none mt-4">
               Наставник&nbsp;&mdash; осознанный взрослый, прошедший многоэтапный отбор и&nbsp;обучение, понимает
               ответственность перед ребёнком, утратившим опору
             </p>
@@ -62,7 +62,7 @@ function OurMission() {
             <h4 className="text-2xl/[100%] lg:text-[2rem]/[100%]">
               Долгосрочная <br /> работа
             </h4>
-            <p className="font-medium text-gray leading-[100%] mt-4">
+            <p className="font-medium text-gray  leading-none mt-4">
               Формируем пары &laquo;ребёнок&mdash;наставник&raquo;, где в&nbsp;первый год выстраиваются доверительные
               отношения, а&nbsp;затем&nbsp;&mdash; социальные маршруты развития ребёнка
             </p>

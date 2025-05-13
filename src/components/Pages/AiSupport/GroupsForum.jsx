@@ -33,7 +33,7 @@ function GroupsForum() {
         <h4 className="font-extrabold md:text-xl uppercase">
           Как ии помогает в работе форум групп
         </h4>
-        <h3 className="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] leading-[100%] mt-6 md:mt-8 lg:mt-10">
+        <h3 className="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem]  leading-none mt-6 md:mt-8 lg:mt-10">
           Архитектор доверия — модель, анализирующая данные о подростках и наставниках
         </h3>
       </div>
@@ -48,10 +48,10 @@ function GroupsForum() {
               <img src={item.img} alt={`pic${index + 3}`} />
             </div>
             <div className="mt-6 md:mt-8 lg:mt-10">
-              <h4 className="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] !leading-[100%]">
+              <h4 className="font-semibold text-xl md:text-[2rem] lg:text-[2.5rem] ! leading-none">
                 {item.title}
               </h4>
-              <p className="font-medium text-sm lg:text-base leading-[100%] mt-4 md:mt-6">
+              <p className="font-medium text-sm lg:text-base  leading-none mt-4 md:mt-6">
                 {item.description}
               </p>
             </div>
