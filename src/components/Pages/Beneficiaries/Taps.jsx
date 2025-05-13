@@ -1,9 +1,15 @@
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
+import "swiper/css";
+
 import UserCreation1 from "../../../assets/images/user_6.png";
 import UserSport1 from "../../../assets/images/user_7.png";
 import UserCooking1 from "../../../assets/images/user_2.png";
+import UserAvatarGirl1 from "../../../assets/images/avatar-girl1.png";
 
 const cardsData = [
+  // category: "творчество",
   {
     id: 1,
     name: "Шаркози Лиза",
@@ -12,6 +18,7 @@ const cardsData = [
     image: UserCreation1,
     desc: `Лиза добрая, но в связи с тем, что ребенок остался без мамы, недоверчива к окружающим. Кроме тети у ребёнка родственников нет, однако тётя не посещает. Проявляет себя в творчестве: интересуется танцами и любит петь. Мечтает стать визажистом. Проживает в г. Пушкино, рп. Правдинский, ул. Разина д. 7`,
   },
+  // category: "спорт",
   {
     id: 2,
     name: "Коморов Дима",
@@ -20,6 +27,7 @@ const cardsData = [
     image: UserSport1,
     desc: `Дима открытый, добрый, вежливый и культурный. Всегда помогает воспитателям с малышами, помогает поддерживать чистоту в группах. Увлекается активным спортом: играет футбол и хочет заниматься боксом. Активно участвует в спортивных мероприятиях. Проживает в г. Пушкино, рп. Правдинский, ул. Разина д. 7`,
   },
+  // category: "кулинария",
   {
     id: 3,
     name: "Злобин Андрей",
@@ -28,6 +36,15 @@ const cardsData = [
     image: UserCooking1,
     desc: `Андрей — жизнерадостный, открытый и упорный. Легко находит общий язык как с детьми, так и с воспитателями, любит прогулки и проводить время с друзьями. А ещё интересуется разными вещами и стремится идти к своим целям. Играет в футбол, любит кино и смотреть новинки фильмов. Активно принимает участие в творческих мероприятиях связанных с приготовлением еды. Проживает в г. Пушкино, рп. Правдинский, ул. Разина д.7`,
   },
+  // category "кулинария",
+  {
+    id: 4,
+    name: "Коршунов Олег",
+    age: "16 лет",
+    category: "кулинария",
+    image: UserAvatarGirl1,
+    desc: `Олег добрый, но замкнутый ребёнок, но при этом внимательный и трудолюбивый. Проявляет интерес к кулинарии и планирует освоить профессию повара. Живёт с мамой-инвалидом. Семья неполная и в непростых бытовых условиях. Несмотря на это, мальчик сохраняет внутреннюю устойчивость, стараясь строить своё будущее. Физических и психических особенностей не имеет. Проживает в МО, г. Красноармейск, ул. Гагарина, д. 11, кв. 31`,
+  }
 ];
 
 const categories = [
@@ -61,30 +78,54 @@ function Taps() {
   };
 
   return (
-    <div className="relative flex flex-col md:flex-row gap-6">
-      {/* Taps Nav */}
-      <div className="sticky top-5 h-max w-full md:max-w-[220px] flex md:grid md:grid-cols-1 overflow-x-auto gap-3 md:gap-0 md:space-y-2.5 text-center pb-2 md:pb-0">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            className={`whitespace-nowrap flex-shrink-0 border h-max rounded-[40px] px-6 py-3 text-sm md:text-base font-semibold transition duration-200 ${
-              activeCategory === cat
+    <div className="relative flex flex-col lg:flex-row gap-6">
+      {/* Tabs Nav */}
+      <div className="md:w-full lg:max-w-45 xl:max-w-55 -mx-4">
+        {/* Mobile Swiper */}
+        <div className="block md:hidden">
+          <Swiper className="!pl-4 md:!pl-0" modules={[Mousewheel]} mousewheel={{ forceToAxis: true }} spaceBetween={10} slidesPerView={"auto"}>
+            {categories.map((cat) => (
+              <SwiperSlide key={cat} style={{ width: "160px" }}>
+                <button
+                  className={`w-full border h-max rounded-[40px] px-6 py-3 text-sm font-semibold transition duration-200 ${activeCategory === cat
+                    ? "border-accent text-accent"
+                    : "border-gray text-gray hover:bg-dark/10"
+                    }`}
+                  onClick={() => {
+                    setActiveCategory(cat);
+                    setVisibleCount(9);
+                  }}
+                >
+                  {cat}
+                </button>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* Desktop grid */}
+        <div className="hidden md:grid grid-cols-4 lg:grid-cols-1 gap-5 lg:gap-2.5 text-center">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              className={`border h-max rounded-[40px] px-6 py-3 text-base font-semibold transition duration-200 ${activeCategory === cat
                 ? "border-accent text-accent"
                 : "border-gray text-gray hover:bg-dark/10"
-            }`}
-            onClick={() => {
-              setActiveCategory(cat);
-              setVisibleCount(9);
-            }}
-          >
-            {cat}
-          </button>
-        ))}
+                }`}
+              onClick={() => {
+                setActiveCategory(cat);
+                setVisibleCount(9);
+              }}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Cards Content */}
-      <div className="max-w-[950px] mx-auto w-full">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 pb-10 lg:pb-15">
+      {/* Cards */}
+      <div className="max-w-239 mx-auto w-full">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 pb-10 lg:pb-15">
           {visibleCards.map((card) => (
             <div
               key={card.id}
@@ -104,7 +145,7 @@ function Taps() {
                   </p>
                 </div>
               </div>
-              <button className="border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-8">
+              <button className="w-max border border-dark rounded-xl inline-flex items-center transition duration-200 hover:bg-dark hover:text-white  gap-3 h-9 px-5 mt-8">
                 <span className="font-medium">Стать наставником</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width={41} height={12} fill="none">
                   <path
