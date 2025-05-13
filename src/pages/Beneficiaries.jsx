@@ -1,5 +1,6 @@
 import HeroBenefic from '../components/Pages/Beneficiaries/HeroBenefic'
 import MentorProject from '../components/Pages/Beneficiaries/MentorProject'
+import Taps from '../components/Pages/Beneficiaries/Taps'
 
 function Beneficiaries() {
   return (
@@ -12,6 +13,11 @@ function Beneficiaries() {
         {/* MentorProject */}
         <section className='mt-20 md:mt-18 lg:mt-25'>
           <MentorProject />
+        </section>
+
+
+        <section className='mt-20 md:mt-18 lg:mt-25'>
+          <Taps />
         </section>
       </main>
     </>
