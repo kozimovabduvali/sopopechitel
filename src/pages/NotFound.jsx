@@ -5,23 +5,23 @@ function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10">
       <div className="max-w-245 mx-auto text-center">
-          <span className="inline-block">
-            <img 
-              src={NotFoundImage} 
-              alt="0" 
-              className="w-full  object-contain"
-            />
-          </span>
-        <h2 className="text-4xl font-semibold mt-8">
+        <div className="inline-block h-30 md:h-70">
+          <img
+            src={NotFoundImage}
+            alt="0"
+            className="size-full"
+          />
+        </div>
+        <h2 className="text-xl md:text-[32px] lg:text-[40px] font-semibold leading-[100%] mt-8">
           Страница не найдена
         </h2>
-        
-        <p className="text-gray text-base mt-6 max-w-170 mx-auto leading-[100%] tracking-[-2%] font-[600]">
+
+        <p className="font-semibold text-sm md:text-base mt-6 max-w-170 mx-auto leading-[100%] tracking-[-2%]">
           Кажется, такой страницы не существует или она была перемещена.
           Вы можете вернуться на главную или воспользоваться меню
         </p>
 
-        <Link 
+        <Link
           to="/"
           className="h-11.5 bg-dark text-white rounded-xl inline-flex items-center gap-3 px-6 transition duration-200 hover:bg-dark/75 mt-10"
         >
