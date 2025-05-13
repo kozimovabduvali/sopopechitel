@@ -277,10 +277,14 @@ function Taps() {
                   </>
                 )}
               </h2>
+
+              <p className="text-gray leading-none mt-6">
+                Оставьте контакт для связи и мы расскажем о дальнейших шагах
+              </p>
             </div>
 
             {/* Right Form */}
-            <div className="bg-white relative z-20 rounded-3xl mt-12">
+            <div className="bg-white relative z-20 rounded-3xl mt-10">
               <div className="p-4 md:p-6 lg:p-8">
                 <form onSubmit={handleSubmit} className="">
                   <div className="space-y-4">
